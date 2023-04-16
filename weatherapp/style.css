@@ -1,0 +1,358 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Heebo&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.current-tab{
+
+    background-color: lightslategrey;
+    border-radius: 20px;
+}
+.active{
+
+    scale: 1;
+    opacity: 1;
+    display: block;
+}
+.container{
+
+    background: linear-gradient(180deg, #112d4e 0%, #3f72af 100%);
+    height: 115vh;
+}
+.wa{
+
+    color: white;
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    font-size: 2.3rem;
+    padding: 35px 0px 50px 0px;
+}
+.tabcont{
+
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 300px;
+}
+.tab{
+
+    font-family: 'Rubik', sans-serif;
+    padding: 5px 15px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+#btn{
+
+    font-family: 'Heebo', sans-serif;
+    text-transform: capitalize;
+    cursor: pointer;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 2px;
+    background-color: #c0c0c078;
+    color: white;
+    font-size: 1rem;
+}
+.glc{
+
+    display: none;
+}
+.glc.active{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin: 40px 0px;
+}
+
+.glc:nth-child(1){
+
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.5rem;
+}
+#allowaccesstogetweatherinfo{
+
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+.lc{
+
+    display: none;
+    text-align: center;
+}
+.lc.active{
+
+    display: block;
+    text-align: center;
+    margin-top: 50px;
+}
+.lc p{
+
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2rem;
+}
+.lc img{
+
+    width: 170px;
+} 
+.fc{
+
+    display: none;
+}
+
+.fc.active{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 10px;
+    margin: 50px 0px;
+}
+input[type=text]{
+
+    background-color: #dcdcdc70;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 6px 15px;
+    width: 30%;
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.3rem;
+}
+input[type=text]::placeholder{
+
+    color: white;
+    font-family: 'Heebo', sans-serif;
+    font-size: 1.1rem;
+}
+input[type=text]:focus{
+
+    outline: 2px solid wheat;
+}
+
+.btn{
+
+    outline: none;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    background-color: darkgray;
+    width: 40px;
+}
+.btn img{
+
+    padding: 7px;
+
+}
+.wi{
+
+    display: none;
+}
+.wi.active{
+
+    display: block;
+    margin-top: 40px;
+}
+.namelogo{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+#cityname{
+
+    color: whitesmoke;
+    font-size: 2.5rem;
+    font-family: 'Heebo', sans-serif;
+}
+
+#weatherdescription{
+
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Heebo',sans-serif;
+    text-align: center;
+    font-size: 1.3rem;
+}
+#weathericon{
+
+    display: block;
+    margin: auto;
+    width: 7%;
+}
+
+.temp{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Heebo',sans-serif;
+    gap: 10px;
+}
+#showtemp{
+
+    font-size: 4rem;
+}
+#showdescnotmain{
+
+    text-transform: capitalize;
+}
+.temp div{
+
+    font-size: 1.2rem;
+    line-height: 30px;
+}
+
+.wshumicloud{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.box{
+
+    border: 1px solid gainsboro;
+    padding: 20px 25px 10px 25px;
+    margin: 15px;
+    height: 140px;
+}
+.box img{
+
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+.box h2{
+
+    color: white;
+    text-align: center;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+.handlerror{
+
+    display: none;
+}
+.handlerror.active{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.handlerror p{
+
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.error{
+
+    display: none;
+}
+
+.error.active{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: -60px;
+}
+.error img{
+
+    width: 400px;
+}
+.error p{
+
+    color: whitesmoke;
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.1rem;
+}
+
+@media screen and (max-width:415px) {
+
+    .wa{
+
+        font-size: 2rem;
+    }
+    
+    .tabcont{
+
+        gap: 30px;
+    }
+    .tab{
+
+        font-size: 1.1rem;
+        padding: 5px 12px;
+    }
+    #cityname{
+
+        font-size: 2.2rem;
+    }
+    .namelogo{
+
+        gap: 15px;
+    }
+
+    .temp{
+
+        flex-direction: column;
+    }
+
+    #showtemp{
+
+        font-size: 3rem;
+    }
+
+    .temp div{
+
+        text-align: center;
+    }
+
+    .box{
+
+        padding: 10px 35px 15px 35px;
+    }
+
+    .container{
+
+        height:177vh;
+    }
+
+    .box2{
+
+        padding-top: 20px;
+    }
+    #weathericon{
+
+        width: 20%;
+    }
+
+    input[type=text]{
+
+        width: 60%;
+    }
+
+    .error img{
+
+        width: 290px;
+        margin-top: 20px;
+    }
+}

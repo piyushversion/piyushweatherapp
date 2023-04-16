@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image" href="/weather-app.png">
+</head>
+<body>
+    <div class="container">
+
+        <h2 class="wa">WEATHER APP</h2>
+
+        <div class="tabcont">
+
+            <p class="tab" id="tab1">Your Weather</p>
+            <p class="tab" id="tab2">Search Weather</p>
+        </div>
+
+        <div id="weathercontainer">
+
+            <!-- grant location container -->
+            <div id="grantlocationcont" class="glc">
+
+                <img src="/placeholder (1).png" alt="XXX" loading="lazy" width="100px">
+                <p>grant location access</p>
+                <p id="allowaccesstogetweatherinfo" data-messageText>Allow Access To Get Weather Information</p>
+                <button id="btn">grant access</button>
+            </div>
+
+            <!-- search form -->
+
+            <form id="formcont" class="fc">
+                <input type="text" placeholder="Search for city..." id="city" autocomplete="off" spellcheck="false">
+                <button class="btn" type="submit">
+                    <img src="/search.png" alt="XXX" loading="lazy" width="21px">
+                </button>
+            </form>
+
+            <!-- loading container -->
+
+            <div id="loadingcont" class="lc">
+                <img src="/gif1-unscreen.gif" alt="XXX" width="250px">
+                <p>loading...</p>
+            </div>
+
+            <!-- show weather info -->
+
+            <div id="weatherinfo" class="wi">
+
+                <div class="namelogo">
+                    <p id="cityname"></p>
+                    <img src="" alt="" id="countryicon" width="30px">
+                </div>
+
+                <p id="weatherdescription"></p>
+
+                <img src="" alt="" id="weathericon">
+
+                <div class="temp">
+                    <p id="showtemp"></p> 
+                    <div>
+                        <p id="showdescnotmain"></p> 
+                        <p id="feelslike"></p>
+                    </div>
+                </div>
+
+                <div class="wshumicloud">
+
+                    <div class="box1 box">
+                        <img src="/wind.png" alt="XXX">
+                        <h2>windspeed</h2>
+                        <h2 id="winddisp"></h2>
+                    </div>
+                    <div class="box2 box">
+                        <img src="/humidity.png" alt="XXX">
+                        <h2>humidity</h2>
+                        <h2 id="humiddisp"></h2>
+                    </div>
+                    <div class="box3 box">
+                        <img src="/cloud.png" alt="XXX">
+                        <h2>clouds</h2>
+                        <h2 id="cloudsdisp"></h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="error" id="myerror">
+                <img src="/Untitled1.png" alt="XXX">
+                <p>Woops,Looks like this city doesn't exist</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="/index.js"></script>
+</body>
+</html>
